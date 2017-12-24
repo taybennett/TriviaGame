@@ -1,0 +1,42 @@
+body {
+
+	background-image: url("http://rockspringpreschool.com/wp-content/uploads/2015/03/georgia-tech-logo.jpg");
+	font-size: 24;
+	color: blue;
+	font-style: bold;
+}
+
+ul {
+
+padding-left: 25px;
+}
+
+li {
+
+padding-left: 25px;
+
+}
+
+#timer {
+	background-color: blue;
+	color: red;
+	margin-right: 1300px;
+	margin-left: 300px;
+	font-size: 48;
+}
+
+#answers {
+
+	
+	margin-left: 75px;
+	margin-right: 1000px;
+}
+
+
+
+#Submit {
+
+	background-color: blue;
+	color: gold;
+	margin-left: 200px;
+}
