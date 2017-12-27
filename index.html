@@ -3,21 +3,20 @@
   <meta charset="UTF-8">
 
   <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.2.3/jquery.js"></script>
   <script language="javascript" type="text/javascript" src="./assets/javascript/app.js"></script>
   <script language="javascript" type="text/javascript" src="./assets/javascript/p5.js"></script>
   <script language="javascript" type="text/javascript" src="./assets/javascript/p5.dom.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
   <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
 
   <!-- This line removes any default padding and style. 
        You might only need one of these values set. -->
   <style> body {padding: 0; margin: 0;} </style>
 </head>
-
-
-
 <body>
 <br>
 <br>
@@ -34,24 +33,39 @@
 
 <p class="question">2. What was the final score of the famous GT vs. Cumberland Foorball of 1916?</p>
 <ul class id ="answers">
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">GT: 45 Cumberland: 0</label><br/>
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">GT: 72 Cumberland: 0</label><br/>
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">GT: 100 Cumberland: 0</label><br/>
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">GT: 222 Cumberland: 0</label><br/>
+<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">GT: 45 Cumberland: 0</label><br/>
+<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">GT: 72 Cumberland: 0</label><br/>
+<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">GT: 100 Cumberland: 0</label><br/>
+<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">GT: 222 Cumberland: 0</label><br/>
 </ul>
  
 
 <p class="question">3. Who was the greatest Quarterback to ever play for Georgia Tech?</p>
 <ul class id ="answers">
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Reggie Ball</label><br/>
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">George Godsey</label><br/>
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Joe Hamilton</label><br/>
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Taylor Bennett</label><br/>
+<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Reggie Ball</label><br/>
+<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">George Godsey</label><br/>
+<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Joe Hamilton</label><br/>
+<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Taylor Bennett</label><br/>
 </ul>
-
+<br>
+<!-- <script src="bower_components/jquery/jquery.js"></script> -->
 <div id="results">
-  <button type="button" class id="Submit">Show Me The Answers!</button>
+  Show Me The Answers!
 </div>
+<div id="category1" class="nonAnswers">
+  <p>The correct answer for Questions 1 is Answer 2.</p>
+</div>
+<div id="category2" class="nonAnswers">
+  <p>The correct answer for Questions 2 is Answer 4.</p>
+</div>
+<div id="category3" class="nonAnswers">
+  <p>The correct answer for Questions 3 is Answer 4.</p>
+</div>
+<div id="category4" class="allCorrect">
+  <p>All Correct! Go Jackets!</p>
+</div>
+
+
  
 </body>
 </html>

@@ -1,9 +1,4 @@
-var canvas;
-var h1;
-var h1x = 100;
-var y = 50;
-var speed = 3;
-var counter = 0;
+
 var timeleft = 45;
 var currentTime = 0;
 var startTime = 0;
@@ -34,25 +29,35 @@ function setup() {
       //counter = 0;
     }
   }
-
 }
 
-// function draw() {
-  
-//   background(250, 250, 255);
-//   h1.position(h1x, 0);
-  
-  
-//   if (h1x > 900) {
-//     h1.position(900, 0);
-//   } 
-  
-//    h1x = h1x + speed;
-  
-// }
+$(function() {    
+  $("#results").hide().show(1000);
+  $("#results").css({color:'red'});
+});
 
+$(function() {
+  $("#results").click(function() { 
+    if (!$("input[@name=q1]:checked").val() || !$("input[@name=q2]:checked").val() || !$("input[@name=q3]:checked").val()) {            
+      alert("You Didn't Answer All the Questions, Get Back to the Quiz!"); 
+        } else {            
+        var cat1name = "1";            
+        var cat2name = "2";                                  
+        var cat3name = "3";            
+                    
 
+        var cat1 = ($("input[@name=q1]:checked").val() != "b"); 
 
-// function mousePressed() {
-//   createP("Answer The Question!");
-// }
+        var cat2 = ($("input[@name=q2]:checked").val() != "d"); 
+
+        var cat3 = ($("input[@name=q3]:checked").val() != "d"); 
+
+        var cat4 = (!cat1 && !cat2 && !cat3); var categories = [];                              
+
+        if (cat1) { $("#category1").show("slow"); };            
+        if (cat2) { $("#category2").show("slow"); };                                   
+        if (cat3) { $("#category3").show("slow"); };
+        if (cat4) { $("#category4").show("slow"); };
+        }
+            });});
+   
