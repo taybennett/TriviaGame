@@ -23,10 +23,36 @@ padding-left: 25px;
 #timer {
 	background-color: blue;
 	color: red;
+	text-align: center;
 	margin-right: 2500px;
-	margin-left: 300px;
+	margin-left: 150px;
 	font-size: 48;
 }
+
+#popupBoxOnePosition{
+	top: 0; 
+	left: 0; 
+	position: fixed; 
+	width: 100%; 
+	height: 120%;
+	background-color: (0,0,255,0,100); 
+	display: none;
+	color: yellow;
+	border-color: black;
+}
+
+.popupBoxWrapper{
+	width: 550px; 
+	margin: 50px auto; 
+	text-align: left;
+	border-color: black;
+	}
+.popupBoxContent{
+	background-color: blue; 
+	padding: 15px;
+	text-align: center;
+	border-color: gold;
+	}
 
 #answers {
 
@@ -36,13 +62,12 @@ padding-left: 25px;
 
 .question {
 
-	background-color: white;
-	margin-right: 1700px;
+	margin-right: 1600px;
 }
 
 #results { 
 	background: #dddada; 
-	color: 000000; 
+	color: red; 
 	padding: 3px; 
 	text-align: center; 
 	margin-left: 50px;
@@ -71,6 +96,5 @@ padding-left: 25px;
 .allCorrect {
 
 	position: absolute;
-	background: white;
 	color: blue;
 }

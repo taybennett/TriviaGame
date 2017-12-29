@@ -57,7 +57,14 @@ $(function() {
         if (cat1) { $("#category1").show("slow"); };            
         if (cat2) { $("#category2").show("slow"); };                                   
         if (cat3) { $("#category3").show("slow"); };
-        if (cat4) { $("#category4").show("slow"); };
-        }
-            });});
-   
+
+        if (cat4) { $("#results").click(function() {
+          $("#popupBoxOnePosition").css({"display": "block"}); }); };
+        };
+      });
+    });
+
+  
+
+
+
